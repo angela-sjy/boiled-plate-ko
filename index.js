@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 const mongoose = require('mongoose')
-mongoose.connect(config.mongoURI, {
+mongoose.connect('mongodb+srv://angela-sjy:rururi98@angela-project.cubvlzt.mongodb.net/?retryWrites=true&w=majority', {
 }).then(() => console.log('MongoDB Connected...'))
     .catch(err => console.log(err))
 
